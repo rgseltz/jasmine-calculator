@@ -50,7 +50,7 @@ function calculateMonthlyPayment(values) {
   const numerator = (monthlyRate * values.principal);
   const denom = (Math.pow(1 + monthlyRate, -n));
   // console.log(numerator / (1 - denom))
-  return numerator / (1 - denom)
+  return (numerator / (1 - denom)).toFixed(2);
 }
 
 // Given a string representing the monthly payment value,
